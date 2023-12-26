@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nos dragons</title>
+        <link rel="stylesheet" href="AdragonJsCss/cssAdragon.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Demo styles -->
+    <style>
+        .swiper {
+            width: 27vw;
+            height: 75vh;
+            margin-top: 4vh;
+        }
+
+        .swiper-slide {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: left;
+            padding: 10px 0 0 10px;
+            border-radius: 18px;
+            font-size: 5vh;
+            color: #fff;
+            font-family: 'Nunito', sans-serif;
+            text-shadow: 2px 0 #000000, -2px 0 #000000, 0 2px #000000, 0 -2px #000000,
+            1px 1px #000000, -1px -1px #000000, 1px -1px #000000, -1px 1px #000000;
+            border: solid;
+            border-color: #ab1616;
+            border-width: 0.7vh;
+        }
+
+        .text{
+            display: flex;
+            font-size: 3vh;
+            font-weight: 1000;
+        }
+
+        .swiper-slide:nth-child(1n) {
+            background-image: url("AdragonImg/DragonarIrtus.jpg");
+            background-size: cover;
+            background-color: rgb(206, 17, 17);
+        }
+
+        .swiper-slide:nth-child(2n) {
+            background-image: url("AdragonImg/DaemoniumIfrit.jpg");
+            background-size: cover;
+            background-color: rgb(0, 140, 255);
+        }
+
+        .swiper-slide:nth-child(3n) {
+            background-image: url("AdragonImg/FuryEpsidra.jpg");
+            background-size: cover;
+            background-color: rgb(10, 184, 111);
+        }
+
+        .swiper-slide:nth-child(4n) {
+            background-image: url("AdragonImg/BolaraIfrit.jpg");
+            background-size: cover;
+            background-color: rgb(211, 122, 7);
+        }
+
+        .swiper-slide:nth-child(5n) {
+            background-image: url("AdragonImg/OculisCaeruleisEpsidra.jpg");
+            background-size: cover;
+            background-color: rgb(118, 163, 12);
+        }
+
+        .swiper-slide:nth-child(6n) {
+            background-image: url("AdragonImg/ReyIrtus.jpg");
+            background-size: cover;
+            background-color: rgb(180, 10, 47);
+        }
+    </style>
+</head>
+<body>
+    <header id="headerA">
+        <div id="log">
+            <a href="index.html"><img href="index.html" src="AdragonImg/LogoAdragon.png" alt="Logo" id="logo"></a>
+            
+        </div>
+        <nav>
+            <img src="AdragonImg/darkModeIcone.png" id="darkmode" class="dmIcone">
+            <a href="index.html" class="buton">Qui nous sommes</a>
+            <a href="page2.html" class="buton">Dragons</a>
+            <a href="page3.html" class="buton">Adoption</a>
+        </nav>
+        <button type="button" aria-label="toggle curtain navigation" class="navToggler">
+            <span class="line l1"></span>
+            <span class="line l2"></span>
+            <span class="line l3"></span>
+        </button>
+    </header>
+    <main id="titreB">
+        Nos dragons :
+    </main>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">Dragonar Irtus
+                <div class="text">Dragon vert amical, joueur, énergique, de taille moyenne, rapide, léger et fidèle<br>
+    
+                Education facile mais mouvementée.<br>
+    
+                Prix : 100 000 €</div>
+            </div>
+            <div class="swiper-slide">Daemonium Ifrit
+                <div class="text">Dragon rouge très grincheux, calme, grand, puissant, lourd et fidèle. Bon dragon de garde.
+    
+                Education facile mais mouvementée.<br>
+                
+                Prix : 100 000 €</div>
+            </div>
+            <div class="swiper-slide">Fury Epsidra
+                <div class="text">Dragon violet amical, calme, petit, léger mais puissant et très rapide.
+    
+                Education facile.<br>
+                
+                Prix : 250 000 €</div>
+            </div>
+            <div class="swiper-slide">Bolara Ifrit
+                <div class="text">Dragon jaune grincheux, énergique, très petit, léger mais puissant. Bon dragon de garde.
+    
+                Education pas facile.<br>
+                
+                Prix : 200 000 €</div>
+            </div>
+            <div class="swiper-slide">Oculis Caeruleis Epsidra
+                <div class="text">Dragon bleu grincheux, calme, de taille moyenne, lourd et ne possède pas d'ailes. Très rapide malgré tout.
+    
+                Education pas facile<br>
+                
+                Prix : 350 000 €</div>
+            </div>
+            <div class="swiper-slide">Rey Irtus
+                <div class="text">Dragon blanc amical, joueur, énergique, grand, lourd et très fidèle. Race cependant extrêmement rare.
+    
+                Education très simple.<br>
+                
+                Prix : 900 000 €</div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+    <script src="AdragonJsCss/scriptP2.js"></script>
+    </body>
+</html>

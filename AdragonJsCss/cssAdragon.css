@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Roboto+Slab&display=swap');
+
+/*principal*/
+*{
+    margin: 0;  
+}
+:root{
+    --couleurPrimaire: #ece2d0;
+    --couleurSecondaire: #bca784;
+
+    --texte: black;
+
+    --fond: rgb(230, 230, 230);
+
+    --bouton: rgb(105, 105, 105);
+    --boutonHover: black;
+}
+.darkMode{
+    --couleurPrimaire: #5d5951;
+    --couleurSecondaire: #4a4234;
+
+    --texte: white;
+
+    --fond: rgb(53, 53, 53);
+
+    --bouton: rgb(169, 169, 169);
+    --boutonHover: white;
+}
+body{
+    background-color: var(--fond);
+}
+header{
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    background: transparent;
+    position: sticky;
+    top: 0;
+    height: 40vh;
+}
+#log{
+    display: flex;
+    width: 40vw;
+    height: 10vh;
+}
+#logo{
+    padding-left: 6vw;
+    width: 13vw;
+    height: 18vh;
+}
+.buton:hover{
+    color: var(--boutonHover);
+}
+main{
+    font-family: 'Roboto Slab', serif;
+    background-color: var(--couleurSecondaire);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh; 
+}
+#titre{
+    height: 20vh;
+    padding-right: 25vw;
+}
+#titreB{
+    height: 7vh;
+    padding: 0 25vw 2vh 0;
+}
+.dmIcone{
+    cursor: pointer;
+    width: 5vw;
+    height: 10vh;
+}
+/* Principal */
+
+
+/* corps */
+article{
+    color: var(--texte);
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    justify-content: center;
+    margin: 10vh 20vw 0 20vw;
+    font-size: 30px;
+}
+span{
+    color: #ab1616;
+}
+/* corps */
+
+/* page2 */
+article section{
+    color: var(--texte);
+    display: flex;
+    width: 70vw;
+    height: 41vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    background-color: var(--couleurSecondaire);
+    margin-top: 5vh;
+    border-radius: 10px;
+}
+.nom{
+    color: #ab1616;
+    font-weight: bold;
+    font-size: 35px;
+}
+.contentA{
+    width: 50%;
+    margin-left: 3vw;
+    margin-right: 3vw;
+}
+.drake{
+    width: 15vw;
+    height: 30vh;
+    margin: 5vh 4vw 0 4vw;
+    border-radius: 10px;
+}
+section:hover{
+    border: 5px solid #771b1b;
+    transition: 0.2s;
+}
+/* page2 */
+
+/* page3 */
+form{
+    font-family: 'Nunito', sans-serif;
+    font-size: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: none;
+    justify-content: center;
+    margin: 0 20vw 2vh 20vw;
+}
+.indic{
+    color: var(--texte);
+    padding-top: 7vh;
+    padding-bottom: 1vh;
+    margin-right: 20vw;
+}
+.rens{
+    font-size: 25px;
+    padding: 2px 5px;
+    width: 40vw;
+    border-radius: 10px;
+}
+.env{
+    margin-top: 5vh;
+    padding: 1vh 1vw 1vh 1vw;
+    border: 3px solid #771b1b;
+    color: #771b1b;
+    background: none;
+    border-radius: 20px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+.env:hover{
+    background-color: #771b1b;
+    color: white;
+    transition: all 0.5s;
+}
+.error{
+    color: red;
+    font-size: 15px;
+}
+/* page3 */
+
+/*menu*/
+.navToggler{
+    position: fixed;
+    z-index: 10;
+    top: 30px;
+    right: 30px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+}
+.line{
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 5px;
+    background: #ab1616;
+    transition: transform 0.3s ease-out,
+    opacity 0.1 ease-out;
+    border-radius: 1vh;
+}
+.l1 {
+    transform: translateY(-10px);
+}
+.l3 {
+    transform: translateY(10px);
+}
+.navToggler.active .l1{
+    transform: translateY(0px) rotate(135deg);
+}
+.navToggler.active .l2{
+    opacity: 0;
+}
+.navToggler.active .l3{
+    transform: translateY(0px) rotate(-135deg);
+}
+nav{
+    width: 100vw;
+    min-height: 10vh;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--couleurPrimaire);
+    border-bottom: 5px solid #ab1616;
+    transform: translateY(-100%);
+    transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+nav.active{
+    transform: translate(0);
+}
+.buton {
+    font-size: 20px;
+    display: block;
+    margin: 10px 0;
+    text-decoration: none;
+    padding: 0.5vh 0.5vw 0.7vh 0.5vw;
+    justify-content: center;
+    color: var(--bouton);
+    border-radius: 10px;
+    letter-spacing: 1px;
+    font-size: 5vh;
+    position: relative;
+}
